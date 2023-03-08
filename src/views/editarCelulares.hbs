@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 offset-md-3">
+            <div class="card card-body bg-dark p-4 text-white">
+                <h4>Actualizar Celular</h4>
+                <form action="/updateCelulares/{{celulares._id}}" method="POST">
+                    <div>
+                        <label for="clave">Modifica clave del celular</label>
+                        <input type="text" name="clave" placeholder="clave" value="{{celulares.clave}}"
+                        class="form-control bg-dark text-white">
+                    </div>
+                    <div>
+                        <label for="marca">Modifica marca del celular</label>
+                        <input type="text" name="marca" placeholder="marca" value="{{celulares.marca}}"
+                        class="form-control bg-dark text-white">
+                    </div>
+                    <div>
+                        <label for="precio">Modifica precio del celular</label>
+                        <input type="number" name="precio" placeholder="precio" value="{{celulares.precio}}"
+                        class="form-control bg-dark text-white">
+                    </div>
+                    <div>
+                        <label for="fechaLanzamiento">Modifica fecha de lanzamiento</label>
+                        <input type="date" name="fechaLanzamiento" placeholder="fechaLanzamiento" value="{{celulares.fechaLanzamiento}}"
+                        class="form-control bg-dark text-white">
+                    </div>
+                    <div>
+                        <label for="ram">Modifica la cantidad de RAM provista</label>
+                        <input type="text" name="ram" placeholder="ram" value="{{celulares.ram}}"
+                        class="form-control bg-dark text-white">
+                    </div>
+                    <div>
+                        <label for="almacenamiento">Modifica la cantidad de almacenamiento provista</label>
+                        <input type="text" name="almacenamiento" placeholder="almacenamiento" value="{{celulares.almacenamiento}}"
+                        class="form-control bg-dark text-white">
+                    </div>
+                    <div>
+                        <label for="cantCamaras">Modifica la cantidad de camaras provistas</label>
+                        <input type="number" name="cantCamaras" placeholder="cantCamaras" value="{{celulares.cantCamaras}}"
+                        class="form-control bg-dark text-white">
+                    </div>
+                    <button class="btn btn-info">Actualizar</button>
+                </form>                
+            </div>
+        </div>
+    </div>
+</div>
